@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+._container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.slider__body {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.slider__line {
+    height: 100%;
+    display: inline-flex;
+    position: relative;
+    left: 0;
+    transition: left ease-in 1s;
+}
+
+.slider__img {
+    width: 800px;
+    height: 100%;
+    object-fit: cover;
+}
+.slider__btn{
+    padding: 10px;
+    font-size: 14px;
+    background-color: pink;
+}
