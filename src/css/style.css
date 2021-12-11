@@ -8,12 +8,21 @@
     max-width: 1000px;
     margin: 0 auto;
 }
+.slider{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('https://galior-market.ru/images/board/medium/10-2017/514ddb9cf600d3b83260b18aa5b109e4.jpg') 0 0 / cover no-repeat;
+}
 
 .slider__body {
     width: 800px;
     height: 500px;
     overflow: hidden;
     margin-bottom: 20px;
+    border-radius: 20px;
 }
 
 .slider__line {
@@ -29,8 +38,27 @@
     height: 100%;
     object-fit: cover;
 }
+
+.slider__buttons{
+    display: flex;
+    justify-content: center;
+}
 .slider__btn{
-    padding: 10px;
+    color: #fff;
+    padding: 10px 20px;
     font-size: 14px;
-    background-color: pink;
+    background-color: #c9223d;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.slider__btn:disabled{
+    cursor: grab;
+    background-color: #d46b81;
+}
+
+.slider__btn:not(:last-child){
+    margin-right: 10px;
 }
